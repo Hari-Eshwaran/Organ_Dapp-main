@@ -16,12 +16,21 @@ module.exports = {
     hardhat: {
       chainId: 1337
     },
-    ganache: {
+    localhost: {
       url: "http://127.0.0.1:8545",
-      chainId: 1337
+      chainId: 1337,
+      accounts: {
+        mnemonic: "test test test test test test test test test test test junk",
+        path: "m/44'/60'/0'/0",
+        initialIndex: 0,
+        count: 20
+      }
     }
   },
   paths: {
-    artifacts: "./app/artifacts"
+    artifacts: "./app/artifacts",
+    sources: "./contracts",
+    tests: "./test",
+    cache: "./cache"
   }
 };

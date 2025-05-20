@@ -12,5 +12,6 @@ export const roles = {
   None: 0,
   Donor: 1,
   Patient: 2,
-  Admin: 3
+  Admin: 3,
+  Hospital: 4
 };

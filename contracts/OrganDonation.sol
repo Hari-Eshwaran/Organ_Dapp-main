@@ -307,4 +307,9 @@ function getPatientList() public view returns (address[] memory) {
     return patientList;
 }
 
+function getHospitalDetails(address hospital) public view returns (Hospital memory) {
+    require(roles[hospital] == Role.Hospital, "Address is not a registered hospital");
+    return hospitals[hospital];
+}
+
 }
